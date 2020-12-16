@@ -1,17 +1,19 @@
 const Discord = require("discord.js");
-const Brainclient = new Discord.Client();
+const Client = new Discord.Client();
 const alexa = require("alexa-bot-api");
 const token = process.env.TOKEN;
-let ai = new alexa("aw2plm")//access key free :)
-Brainclient.on("ready", async () => {
+const channel = require("./config.json")
+let ai = new alexa("aw2plm")
+
+Client.on("ready", async () => {
     console.log(`Chatbot is online!`);
-  Brainclient.user.setActivity(`Hans kapan punya pacar?`)
+  Client.user.setActivity(`Im chatting with everyone!!`)
 });
 
-Brainclient.on('message', async message => {
+Client.on('message', async message => {
     if (message.author.bot) return;
 
-    if (message.channel.id === "788306064956588072") { // if you want it to work only in a specific channel.
+    if (message.channel.id === channel) {
 
     let content = message.content;
 
@@ -21,4 +23,4 @@ Brainclient.on('message', async message => {
     }
 });
 
-Brainclient.login(token);
+Client.login(token);
