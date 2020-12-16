@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const Client = new Discord.Client();
 const alexa = require("alexa-bot-api");
 const token = process.env.TOKEN;
-const channel = Client.config.channel;
+const channel = require("./config.json").channel;
 let ai = new alexa("aw2plm");
 
 Client.on("ready", async () => {
