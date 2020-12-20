@@ -6,7 +6,7 @@
 > Express package.
 > Alexa-bot-api package.
 ## Setup
-> - Fork this repo
+> - Copy this repo
 > - Replace TOKEN in ```.env``` to your bot token. (⚠️ don't share your bot token with anyone)
 > - Get your server Channel id then replace config.json with your Channel ID
 > - Click space anywhere in watch.json (To refresh in glitch or something.)
