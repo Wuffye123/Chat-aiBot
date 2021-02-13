@@ -1,10 +1,10 @@
 # Chat-aiBot.
 > 🧠 A simple discord bot that can talk with user in a channel.
 ## Requirement.
-> Node Version 12.x
-> Discord.js package Version 12.x
-> Express package.
-> Alexa-bot-api package.
+> 1. Node Version 12.x
+> 2. Discord.js package Version 12.x
+> 3. Express package.
+> 4. Alexa-bot-api package.
 ## Setup
 > - Copy this repo
 > - Replace TOKEN in ```.env``` to your bot token. (⚠️ don't share your bot token with anyone)
